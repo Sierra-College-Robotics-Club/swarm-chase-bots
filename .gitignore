@@ -1,5 +1,7 @@
-'/Circuit Board-backups/'
-'#auto_saved_files#'
-'~Circuit Board.kicad_sch.lck'
-'fp-info-cache'
-'sym-lib-table'
+/Circuit_Board-backups/
+#auto_saved_files#
+~Circuit_Board.kicad_sch.lck
+~Circuit_Board.kicad_pro.lck
+~Circuit_Board.kicad_pcb.lck
+fp-info-cache
+sym-lib-table
