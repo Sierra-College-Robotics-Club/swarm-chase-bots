@@ -12,7 +12,9 @@ h2 = PWM((3),freq = frequency)
 h3 = PWM((4),freq = frequency)
 h4 = PWM((5),freq = frequency)
 
-testadc = ADC(28)
+midresv = ADC(28)
+leftresv = ADC(27)
+rightresv = ADC(26)
 
 def movement(direction, speed):
     
@@ -47,7 +49,7 @@ while True:
     minval = 66000
     maxval = 0
     for i in range (0, 500):
-        reading = testadc.read_u16()
+        reading = midresv.read_u16()
         if reading > maxval:
             maxval = reading
         if reading < minval:

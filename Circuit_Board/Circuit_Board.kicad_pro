@@ -475,7 +475,7 @@
     ]
   },
   "meta": {
-    "filename": "Circuit Board.kicad_pro",
+    "filename": "Circuit_Board.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -642,8 +642,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Circuit Board.kicad_sch",
-        "name": "Circuit Board",
+        "filename": "Circuit_Board.kicad_sch",
+        "name": "Circuit_Board",
         "uuid": "4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
       }
     ],
@@ -653,7 +653,7 @@
   "sheets": [
     [
       "4ae8f7b1-f10b-4627-ad62-bdeaaafef58f",
-      "Circuit Board"
+      "Circuit_Board"
     ]
   ],
   "text_variables": {},

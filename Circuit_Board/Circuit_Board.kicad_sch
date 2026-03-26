@@ -4073,7 +4073,7 @@
 			(uuid "c2bb4694-facc-4d69-ae14-f305da6e2834")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "IR2")
 					(unit 1)
@@ -4151,7 +4151,7 @@
 			(uuid "0e7190a8-b120-48bf-b0d8-ed4d1ef6cdfc")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR09")
 					(unit 1)
@@ -4229,7 +4229,7 @@
 			(uuid "98d03b59-047e-41ca-bd5b-454e2adf8d9d")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR014")
 					(unit 1)
@@ -4307,7 +4307,7 @@
 			(uuid "2e687322-7293-41f5-a80e-83fbcd09591d")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR01")
 					(unit 1)
@@ -4384,7 +4384,7 @@
 			(uuid "26d88289-0995-4924-9434-1554bcdf3682")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR05")
 					(unit 1)
@@ -4462,7 +4462,7 @@
 			(uuid "9c8130ac-8321-4d86-a998-eae1f855031e")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR08")
 					(unit 1)
@@ -4543,7 +4543,7 @@
 			(uuid "da37affb-9f0c-45a6-a985-050efcea5601")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "R3")
 					(unit 1)
@@ -4620,7 +4620,7 @@
 			(uuid "ee709f21-7234-4d7b-a3e6-8994d493a2c3")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR010")
 					(unit 1)
@@ -4701,7 +4701,7 @@
 			(uuid "f7b89984-15f9-42e3-b0be-75d029f113fb")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "R2")
 					(unit 1)
@@ -4778,7 +4778,7 @@
 			(uuid "3f839bc6-d3e1-42a6-af9e-9d01e1a804d0")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR017")
 					(unit 1)
@@ -4860,7 +4860,7 @@
 			(uuid "421d02eb-32d8-42b7-aa72-e8ad12342e16")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "C2")
 					(unit 1)
@@ -4938,7 +4938,7 @@
 			(uuid "f4f12dce-38ad-4351-acfd-94cacfdbe9b9")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR015")
 					(unit 1)
@@ -5029,7 +5029,7 @@
 			(uuid "0d286c85-3aa3-402d-b85e-67e43805033e")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "J2")
 					(unit 1)
@@ -5107,7 +5107,7 @@
 			(uuid "5383e3bc-d120-46ee-9f7b-2d21727fbfc8")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR03")
 					(unit 1)
@@ -5185,7 +5185,7 @@
 			(uuid "0f5714a5-0a5f-4ba5-8326-ac302bd5f5f0")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR011")
 					(unit 1)
@@ -5263,7 +5263,7 @@
 			(uuid "00459b1f-e5e3-4f73-98b3-cb8a8334513b")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR012")
 					(unit 1)
@@ -5345,7 +5345,7 @@
 			(uuid "a5051caf-dbad-45d8-be4d-6b5b5ebbf7dc")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "C1")
 					(unit 1)
@@ -5425,7 +5425,7 @@
 			(uuid "3ca2f2e4-3dbd-4ce2-8e32-04c27d09af1e")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "D1")
 					(unit 1)
@@ -5503,7 +5503,7 @@
 			(uuid "194fb566-88f9-4acb-bda3-12dd72c3fa6f")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR016")
 					(unit 1)
@@ -5706,7 +5706,7 @@
 			(uuid "22c486ed-ec98-4745-a1e7-846f14808e4a")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "U1")
 					(unit 1)
@@ -5784,7 +5784,7 @@
 			(uuid "2d2854e7-58ec-4652-9c87-d5f2e1aadbd8")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR04")
 					(unit 1)
@@ -5861,7 +5861,7 @@
 			(uuid "bd51c5a4-da26-4dd4-960d-84960004f118")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR06")
 					(unit 1)
@@ -5942,7 +5942,7 @@
 			(uuid "6d4a2ddb-5649-4a1a-8350-b4f92573c53d")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "R1")
 					(unit 1)
@@ -6019,7 +6019,7 @@
 			(uuid "6a3eaf79-6999-4cb3-b826-4d40d26527fe")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR013")
 					(unit 1)
@@ -6097,7 +6097,7 @@
 			(uuid "1070f52c-66a6-4648-9b97-84101b2aa376")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR07")
 					(unit 1)
@@ -6207,7 +6207,7 @@
 			(uuid "db2bc659-01a5-4ecf-a50c-c6ef8f901ed2")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "J4")
 					(unit 1)
@@ -6288,7 +6288,7 @@
 			(uuid "5ccffde2-c4a1-4c21-8afc-be01d3bdd532")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "IR1")
 					(unit 1)
@@ -6308,7 +6308,7 @@
 		(dnp no)
 		(uuid "d62d4c00-4718-45a4-932c-12857fb72caf")
 		(property "Reference" "J1"
-			(at 153.416 38.608 0)
+			(at 153.416 38.862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6318,7 +6318,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 153.67 40.386 0)
+			(at 153.416 40.894 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6367,7 +6367,7 @@
 			(uuid "a8129afe-95d2-4db2-a282-1b54772e2849")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "J1")
 					(unit 1)
@@ -6448,7 +6448,7 @@
 			(uuid "3e45f497-7d95-4ee0-9bc2-fa9697b7cf66")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "R4")
 					(unit 1)
@@ -6530,7 +6530,7 @@
 			(uuid "7ac0dceb-3bc3-4d66-98a0-210de3527f8b")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "C3")
 					(unit 1)
@@ -6608,7 +6608,7 @@
 			(uuid "d7a3d812-3c01-4be3-bf45-a9f0913859cf")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR02")
 					(unit 1)
@@ -6689,7 +6689,7 @@
 			(uuid "fde58615-5dea-42e1-b75f-e5f969cd054d")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "IR3")
 					(unit 1)
@@ -6766,7 +6766,7 @@
 			(uuid "bb059dc3-411f-41e9-90d5-e753e6beb70e")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "#PWR018")
 					(unit 1)
@@ -6849,7 +6849,7 @@
 			(uuid "78ca0f4a-4336-4007-b8f9-79dd00ab8244")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "C4")
 					(unit 1)
@@ -6933,7 +6933,7 @@
 			(uuid "379555ff-e243-48f2-b0ad-6ff7a0e967a3")
 		)
 		(instances
-			(project "Circuit Board"
+			(project "Circuit_Board"
 				(path "/4ae8f7b1-f10b-4627-ad62-bdeaaafef58f"
 					(reference "J3")
 					(unit 1)
