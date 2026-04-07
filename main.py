@@ -45,47 +45,26 @@ def movement(direction, speed):
     print(direction, speed ,duty, frequency)
     return True
 
-while True:
-    #START: Bad code fix later if it can, too many of the samething copy and pasted
-    #Middle dector readings
+def irreader(irreceiver):
     minval = 66000
     maxval = 0
     for i in range (0, 500):
-        reading = midresv.read_u16()
+        reading = irreceiver.read_u16()
         if reading > maxval:
             maxval = reading
         if reading < minval:
             minval = reading
     #print("Max value mid: ", maxval, "Min value mid: ", minval)
     irstrength = maxval-minval
-    print(irstrength)
+    #print(irstrength)
+    return (irstrength)
+
+while True:
+    irstrength = irreader(midresv)
+    irstrength2 = irreader(leftresv)
+    irstrength3 = irreader(rightresv)
     
-    #Left dector readings :values may need to be changed
-    minval = 66000
-    maxval = 0
-    for i in range (0, 500):
-        reading = leftresv.read_u16()
-        if reading > maxval:
-            maxval = reading
-        if reading < minval:
-            minval = reading
-    #print("Max value left: ", maxval, "Min value left: ", minval)
-    irstrength2 = maxval-minval
-    print(irstrength2)
-    
-    #Right dector readings :values may need to be changed
-    minval = 66000
-    maxval = 0
-    for i in range (0, 500):
-        reading = rightresv.read_u16()
-        if reading > maxval:
-            maxval = reading
-        if reading < minval:
-            minval = reading
-    print("Max value right: ", maxval, "Min value right: ", minval)
-    irstrength3 = maxval-minval
-    print(irstrength3)
-    #END: Bad code fix later if it can, too many of the samething copy and pasted
+    print(irstrength, irstrength2, irstrength3)
     
     if irstrength2 >= irstrength and irstrength2 >= 1000: #Left
         movement('left', 0.5)
