@@ -8727,9 +8727,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 261.62 42.2909 0)
-			(hide yes)
+		(property "Value" "0.33uF"
+			(at 262.382 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12122,9 +12121,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 190.5 42.2909 0)
-			(hide yes)
+		(property "Value" "0.1uF"
+			(at 178.816 39.878 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
