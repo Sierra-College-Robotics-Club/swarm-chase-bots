@@ -12,9 +12,19 @@ h2 = PWM((3),freq = frequency)
 h3 = PWM((4),freq = frequency)
 h4 = PWM((5),freq = frequency)
 
-midresv = ADC(28)
-leftresv = ADC(27)
-rightresv = ADC(26)
+BOT_NUM = 2
+
+
+if BOT_NUM == 1:
+    midresv = ADC(28)
+    leftresv = ADC(27)
+    rightresv = ADC(26)
+
+elif BOT_NUM == 2:
+    midresv = ADC(27)
+    leftresv = ADC(28)
+    rightresv = ADC(26)
+
 
 def movement(direction, speed):
     
