@@ -16095,7 +16095,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Designed by: \nJense Daurt\nPatrick Leiser\nv1.0"
+	(gr_text "Designed by: \nJense Duart\nPatrick Leiser\nv1.1"
 		(at 122.174 83.058 0)
 		(layer "B.SilkS")
 		(uuid "4b457604-941f-4b15-aca8-805809a47e8b")

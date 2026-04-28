@@ -12202,7 +12202,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "100R"
 			(at 190.246 114.808 90)
 			(show_name no)
 			(do_not_autoplace no)
