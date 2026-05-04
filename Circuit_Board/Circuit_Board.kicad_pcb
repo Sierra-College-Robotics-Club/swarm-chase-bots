@@ -13552,7 +13552,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "100R"
 			(at 0.0875 1.5 90)
 			(layer "F.SilkS")
 			(uuid "830ebd3c-4fd2-439d-b624-6f8cd2a874b9")
