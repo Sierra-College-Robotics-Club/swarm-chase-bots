@@ -5167,12 +5167,6 @@
 		(uuid "25ffe029-9688-486c-a427-16740b610ea7")
 	)
 	(junction
-		(at 119.38 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "27035818-9ed6-4225-873c-13c2e22050b8")
-	)
-	(junction
 		(at 208.28 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5201,12 +5195,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "31cffc7b-148a-413c-aaf1-2735cf75f44f")
-	)
-	(junction
-		(at 218.44 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "363855a8-db7a-4368-a4eb-bb64e068444d")
 	)
 	(junction
 		(at 227.33 90.17)
@@ -5305,6 +5293,12 @@
 		(uuid "8df9a8fb-4aa3-4157-9d48-a1bc706d3311")
 	)
 	(junction
+		(at 218.44 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "956ff4fc-1a70-4782-9aaa-5a6c7a4700b0")
+	)
+	(junction
 		(at 215.9 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5315,6 +5309,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af3f5956-fcf5-46c0-a7b2-767da8bfd7e6")
+	)
+	(junction
+		(at 119.38 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b52faf50-c384-4337-924a-2a6c971b59a0")
 	)
 	(junction
 		(at 119.38 118.11)
@@ -5678,7 +5678,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 38.1) (xy 241.3 33.02)
+			(xy 240.03 38.1) (xy 240.03 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5688,7 +5688,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 33.02) (xy 248.92 33.02)
+			(xy 240.03 33.02) (xy 248.92 33.02)
 		)
 		(stroke
 			(width 0)
@@ -6438,7 +6438,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 45.72) (xy 248.92 45.72)
+			(xy 240.03 45.72) (xy 248.92 45.72)
 		)
 		(stroke
 			(width 0)
@@ -8491,9 +8491,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 198.12 42.2909 0)
-			(hide yes)
+		(property "Value" "0.1uF"
+			(at 195.072 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8728,7 +8727,7 @@
 			)
 		)
 		(property "Value" "0.33uF"
-			(at 262.382 39.37 0)
+			(at 258.572 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9572,9 +9571,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 229.87 42.2909 0)
-			(hide yes)
+		(property "Value" "0.1uF"
+			(at 227.076 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10368,9 +10366,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 204.978 41.91 0)
-			(hide yes)
+		(property "Value" "220uF"
+			(at 218.948 44.196 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10605,7 +10602,7 @@
 		(dnp no)
 		(uuid "a1462982-ea28-4963-bb3a-cd0599716798")
 		(property "Reference" "R7"
-			(at 101.346 128.778 90)
+			(at 100.584 128.778 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10614,8 +10611,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 104.648 128.778 90)
+		(property "Value" "5.1k"
+			(at 105.41 128.778 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11128,7 +11125,7 @@
 		(dnp no)
 		(uuid "afb47f61-66e3-4e99-8db4-fd12510ba080")
 		(property "Reference" "R6"
-			(at 101.346 123.698 90)
+			(at 100.33 123.698 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11137,8 +11134,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 104.648 123.698 90)
+		(property "Value" "5.1k"
+			(at 105.41 123.698 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11872,7 +11869,7 @@
 		(dnp no)
 		(uuid "d413b993-8158-4c30-bbb9-09b334b3671e")
 		(property "Reference" "R5"
-			(at 101.6 118.618 90)
+			(at 100.076 118.618 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11881,8 +11878,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 104.648 118.618 90)
+		(property "Value" "5.1k"
+			(at 105.156 118.618 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12111,7 +12108,7 @@
 		(dnp no)
 		(uuid "d6910208-b7f9-4c7b-8d7a-4c19df572d6a")
 		(property "Reference" "C7"
-			(at 187.96 39.37 0)
+			(at 187.452 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12122,7 +12119,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 178.816 39.878 0)
+			(at 187.452 44.196 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12202,8 +12199,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100R"
-			(at 190.246 114.808 90)
+		(property "Value" "100"
+			(at 191.262 115.062 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12263,7 +12260,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 241.3 41.91 0)
+		(at 240.03 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12273,7 +12270,7 @@
 		(dnp no)
 		(uuid "de86c29f-1bee-4469-90ef-8238978488a2")
 		(property "Reference" "C3"
-			(at 242.316 39.116 0)
+			(at 241.046 39.116 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12283,9 +12280,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 227.838 41.91 0)
-			(hide yes)
+		(property "Value" "220uF"
+			(at 240.792 44.196 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12296,7 +12292,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
-			(at 242.2652 45.72 0)
+			(at 240.9952 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12307,7 +12303,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 41.91 0)
+			(at 240.03 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12318,7 +12314,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 241.3 41.91 0)
+			(at 240.03 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12444,7 +12440,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 123.19 165.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12515,7 +12511,7 @@
 		(dnp no)
 		(uuid "e3258f59-60d0-4d21-a971-2e606e20c9f5")
 		(property "Reference" "C5"
-			(at 212.09 39.37 0)
+			(at 211.328 39.624 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12525,9 +12521,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 214.63 42.2909 0)
-			(hide yes)
+		(property "Value" "0.1uF"
+			(at 211.328 44.196 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13184,7 +13179,7 @@
 		(dnp no)
 		(uuid "fe777ff2-9ec7-4835-91b7-effe6a9f50b3")
 		(property "Reference" "C4"
-			(at 250.952 39.624 0)
+			(at 249.682 39.624 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13194,9 +13189,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 252.73 42.2909 0)
-			(hide yes)
+		(property "Value" "0.1uF"
+			(at 249.936 44.196 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

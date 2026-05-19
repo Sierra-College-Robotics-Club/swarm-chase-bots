@@ -157,7 +157,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor handsolder")
 		(property "Reference" "R8"
-			(at 2.1825 0 180)
+			(at 3.4895 0 180)
 			(layer "F.SilkS")
 			(uuid "6026c7b0-5257-4b85-b5bc-b32aec61bf53")
 			(effects
@@ -167,9 +167,9 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 0 1.43 90)
-			(layer "F.Fab")
+		(property "Value" "10k"
+			(at 1.9895 0.025 180)
+			(layer "F.SilkS")
 			(uuid "cbdf7768-cfaa-442a-a618-a0793edec4c2")
 			(effects
 				(font
@@ -315,7 +315,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=5.00mm, diameter=10mm, height=16mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 5.00mm diameter 10mm height 16mm Electrolytic Capacitor")
 		(property "Reference" "C3"
-			(at 7.5 -6 90)
+			(at 8.57 -0.23 180)
 			(layer "F.SilkS")
 			(uuid "25d5f3c4-b9a3-4e4f-b307-ff598ae0d118")
 			(effects
@@ -325,9 +325,9 @@
 				)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 1.867677 -6 90)
-			(layer "F.Fab")
+		(property "Value" "220uF"
+			(at -3.43 -0.23 180)
+			(layer "F.SilkS")
 			(uuid "a6d68102-3d88-4b1e-a7e9-391734b8fda4")
 			(effects
 				(font
@@ -2407,9 +2407,9 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C6"
-			(at 0 -1.905 180)
+			(at 0.1125 1.45 90)
 			(layer "F.SilkS")
-			(uuid "07aa4bb6-767f-4607-945f-b0f65a22d486")
+			(uuid "2a7faa73-ecdf-44af-8cc2-968a183a0e4a")
 			(effects
 				(font
 					(size 1 1)
@@ -2417,11 +2417,10 @@
 				)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 2.7725 -1.27 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f86dc58d-862e-4027-b033-6cc216ad77ce")
+		(property "Value" "0.1uF"
+			(at 0.1125 -1.27 90)
+			(layer "F.SilkS")
+			(uuid "8ce4a318-c1a6-4d07-8d20-b4aac43889d4")
 			(effects
 				(font
 					(size 1 1)
@@ -2433,7 +2432,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f12148a6-5315-43be-905d-097b9b4ccb83")
+			(uuid "bb9946ec-2c25-4de0-938a-e342038809f3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2444,7 +2443,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d2907005-e027-4dd0-a8b0-d336bb890799")
+			(uuid "207258e9-ef82-4377-9e65-ffb841fdd91e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2578,7 +2577,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 0 4.15 0)
+			(at 1.2 3.88 0)
 			(layer "F.Fab")
 			(uuid "62a1be9b-ab18-450b-8eb3-88c9875a9629")
 			(effects
@@ -2683,7 +2682,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C4"
-			(at 0.2325 -1.905 90)
+			(at 0.1925 1.66 90)
 			(layer "F.SilkS")
 			(uuid "6715d499-cc14-4231-9922-80bf2edfc166")
 			(effects
@@ -2693,10 +2692,9 @@
 				)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at -0.5 -1.5 90)
-			(layer "F.Fab")
-			(hide yes)
+		(property "Value" "0.1uF"
+			(at -0.3075 -1.5 90)
+			(layer "F.SilkS")
 			(uuid "0c869906-b362-418c-9af6-17c07c4fbd95")
 			(effects
 				(font
@@ -3916,9 +3914,9 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C2"
-			(at 0.2325 1.5 90)
+			(at 0.1925 1.5 90)
 			(layer "F.SilkS")
-			(uuid "7f2d23a8-7f5f-4033-bb66-1d8f0451344e")
+			(uuid "44d30730-b026-4a7e-a0b2-ed77fd9972dd")
 			(effects
 				(font
 					(size 1 1)
@@ -3926,11 +3924,10 @@
 				)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at -0.5 1.68 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "272814d8-fc84-48db-85e9-96b8db3983f5")
+		(property "Value" "0.1uF"
+			(at 0.1925 -1.52 90)
+			(layer "F.SilkS")
+			(uuid "ec483dec-145b-4a30-82d2-429e0aa313ce")
 			(effects
 				(font
 					(size 1 1)
@@ -3942,7 +3939,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f9109ef4-4ebd-4b2e-bbc5-aa1bd094ed08")
+			(uuid "d016323d-073f-4cb1-af9f-dbc2c50c52ac")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3953,7 +3950,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "44ff7c67-632e-4b01-8ec6-c65ffce5a824")
+			(uuid "9031a021-a703-472e-8ab4-370512c2e76d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4956,7 +4953,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at -0.11975 1.68 0)
+			(at -3.92375 0.12425 0)
 			(layer "F.SilkS")
 			(uuid "dacde64e-2549-4308-b6bc-192693b92297")
 			(effects
@@ -5113,10 +5110,9 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 0 1.43 0)
-			(layer "F.Fab")
-			(hide yes)
+		(property "Value" "5.1k"
+			(at 0.3175 1.52 0)
+			(layer "F.SilkS")
 			(uuid "c72567db-b248-43a8-8558-9b6250348405")
 			(effects
 				(font
@@ -6366,7 +6362,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor handsolder")
 		(property "Reference" "R7"
-			(at -0.0875 -1.5 0)
+			(at -0.0875 -1.38 0)
 			(layer "F.SilkS")
 			(uuid "bf81ef8b-553c-45cd-8556-e58e14422777")
 			(effects
@@ -6376,10 +6372,9 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "5.1k"
 			(at 0 1.43 0)
-			(layer "F.Fab")
-			(hide yes)
+			(layer "F.SilkS")
 			(uuid "27041624-1691-401c-887b-937a4384be9e")
 			(effects
 				(font
@@ -9290,10 +9285,9 @@
 				)
 			)
 		)
-		(property "Value" "C_Polarized"
+		(property "Value" "0.1uF"
 			(at -0.2325 1.68 90)
-			(layer "F.Fab")
-			(hide yes)
+			(layer "F.SilkS")
 			(uuid "adf8cd3f-2be9-4010-8f61-3656744ff585")
 			(effects
 				(font
@@ -10511,7 +10505,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=5.00mm, diameter=10mm, height=16mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 5.00mm diameter 10mm height 16mm Electrolytic Capacitor")
 		(property "Reference" "C1"
-			(at 7.5 6 90)
+			(at 8.57 -0.13 180)
 			(layer "F.SilkS")
 			(uuid "ba6f5af6-1bbf-42d0-8952-55fe5d41c19e")
 			(effects
@@ -10521,9 +10515,9 @@
 				)
 			)
 		)
-		(property "Value" "C_Polarized"
-			(at 2.5 6 90)
-			(layer "F.Fab")
+		(property "Value" "220uF"
+			(at -3.43 -0.13 180)
+			(layer "F.SilkS")
 			(uuid "11323b34-6ea6-42c3-a6ff-6fe93607b36c")
 			(effects
 				(font
@@ -12613,10 +12607,9 @@
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 0 1.43 0)
-			(layer "F.Fab")
-			(hide yes)
+		(property "Value" "5.1k"
+			(at 0.3175 1.24 0)
+			(layer "F.SilkS")
 			(uuid "16f68bee-ee24-4776-8402-f77171194d2d")
 			(effects
 				(font
@@ -13552,7 +13545,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "100"
 			(at 0.0875 1.5 90)
 			(layer "F.SilkS")
 			(uuid "830ebd3c-4fd2-439d-b624-6f8cd2a874b9")
@@ -16207,14 +16200,6 @@
 		(layer "F.Cu")
 		(net "GND")
 		(uuid "49fd24b6-f665-4dce-a649-ac5a309875f2")
-	)
-	(segment
-		(start 171.915 72.39)
-		(end 171.45 71.925)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "GND")
-		(uuid "4bcf58b0-4ce1-4105-a845-dc9c8e58aa90")
 	)
 	(segment
 		(start 180.975 106.887)
