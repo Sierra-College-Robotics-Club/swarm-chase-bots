@@ -7,24 +7,49 @@ frequency = 1000
 led = Pin(25,  Pin.OUT)
 led.on()
 
-h1 = PWM((2),freq = frequency)
-h2 = PWM((3),freq = frequency)
-h3 = PWM((4),freq = frequency)
-h4 = PWM((5),freq = frequency)
+#TODO: switch pwm drive to enable pin not the h bridge pins
 
-BOT_NUM = 2
-
+BOT_NUM = 3
 
 if BOT_NUM == 1:
     midresv = ADC(28)
     leftresv = ADC(27)
     rightresv = ADC(26)
+    
+    h1 = PWM((2),freq = frequency)
+    h2 = PWM((3),freq = frequency)
+    h3 = PWM((4),freq = frequency)
+    h4 = PWM((5),freq = frequency)
 
 elif BOT_NUM == 2:
     midresv = ADC(27)
     leftresv = ADC(28)
     rightresv = ADC(26)
+    
+    h1 = PWM((2),freq = frequency)
+    h2 = PWM((3),freq = frequency)
+    h3 = PWM((4),freq = frequency)
+    h4 = PWM((5),freq = frequency)
 
+elif BOT_NUM == 3:
+    rightresv = ADC(26)
+    midresv = ADC(27)
+    leftresv = ADC(28)
+    
+    led_r = Pin(15,  Pin.OUT)
+    led_m = Pin(14,  Pin.OUT)
+    led_l = Pin(13,  Pin.OUT)
+    
+    #h is the motor driver pins (h for H-bridge)
+    enable_a = Pin(2,  Pin.OUT) #enable_a = PWM((2),freq = frequency)
+    enable_a.on()
+    h1 = PWM((3),freq = frequency)
+    h2 = PWM((4),freq = frequency)
+    h3 = PWM((5),freq = frequency)
+    h4 = PWM((6),freq = frequency)
+    enable_b = Pin(7,  Pin.OUT) #enable_b = PWM((7),freq = frequency)
+    enable_b.on()
+    
 
 def movement(direction, speed):
     
@@ -76,16 +101,28 @@ while True:
     
     print(irstrength, irstrength2, irstrength3)
     
+    led_r.off();
+    led_m.off();
+    led_l.off();
+    
     if irstrength2 >= irstrength and irstrength2 >= 1000: #Left
         movement('left', 0.5)
+        led_l.on()
     elif irstrength3 >= irstrength and irstrength3 >= 1000: #Right
         movement('right', 0.5)
+        led_r.on()
     elif irstrength > 22000 and not irstrength3 >= irstrength and not irstrength2 >= irstrength:
         movement("down", 0.75)
+        led_r.on()
+        led_l.on()
     elif irstrength > 1000 and irstrength < 5000:
         movement("up", 1)
+        led_m.on()
     else:
         movement("stop", 0)
+        led_r.on();
+        led_m.on();
+        led_l.on();
 
     
     #movement("up", 0.5*(65535-irstrength)/65535)
