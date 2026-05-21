@@ -4,7 +4,7 @@ from math import ceil
 
 led = Pin(25,  Pin.OUT)
 led.on()
-p16 = Pin(16,  Pin.OUT)
+p16 = Pin(20,  Pin.OUT)
 
 duty = ceil(0.5 * 65535)
 
