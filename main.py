@@ -15,8 +15,8 @@ global searchProtocol
 searchProtocol = False
 global timeLastMoved
 timeLastMoved = ticks_ms()
-global couer
-couer = True
+global cower
+cower = True
 
 if BOT_NUM == 1:
     midresv = ADC(27)
@@ -141,7 +141,7 @@ def irreader(irreceiver):
 def smoothMove(direction, speed):
     global lastDirection
     global timeLastMoved
-    global couer
+    global cower
     
     if direction == lastDirection:
         movement(direction, speed)
@@ -150,14 +150,14 @@ def smoothMove(direction, speed):
     elif lastDirection == 'right' and direction == "up" or direction == "down" or direction == "stop":
         movement('stop', speed)
     
-    couer = False
+    cower = False
     timeLastMoved = ticks_ms()
     lastDirection = direction
 
 while True:
     global timeLastMoved
     global searchProtocol
-    global couer
+    global cower
     
     irstrengthMid = irreader(midresv)
     irstrengthLeft = irreader(leftresv)
@@ -173,7 +173,7 @@ while True:
     
     print("currentTime: ", currentTime)
     print("timeLastMoved: ", timeLastMoved)
-    if couer == False:
+    if cower == False:
         if ticks_diff(currentTime, timeLastMoved) >= 3000:
             searchProtocol = True
             print("Ahhhhhhhhhh")
@@ -186,7 +186,7 @@ while True:
         searchProtocol = False
         smoothMove('right', 0.5)
         led_r.on()
-    elif irstrengthMid > 22000 and not irstrengthRight >= irstrengthMid and not irstrengthLeft >= irstrengthMid: #Backup
+    elif irstrengthMid > 22000: #Backup
         searchProtocol = False
         smoothMove("down", 0.75)
         led_r.on()
@@ -195,11 +195,17 @@ while True:
         searchProtocol = False
         smoothMove("up", 0.9)
         led_m.on()
+    elif irstrengthMid >= 5000: #and <22000 #Powered stop/TOO CLOSE (stop)
+        searchProtocol = False
+        movement("stop", 0)
+        led_r.on()
+        led_m.on()
+        led_l.on()
     else:
         if searchProtocol == True:
             movement('left', 0.5)
         else:
-            movement("stop", 0)
+            movement("blindStop", 0)
             led_r.on()
             led_m.on()
             led_l.on()
