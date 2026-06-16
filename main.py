@@ -1,5 +1,5 @@
 from machine import Pin,PWM,ADC
-from time import sleep
+from time import sleep,ticks_diff,ticks_add,ticks_ms
 from math import ceil
 
 frequency = 1000
@@ -10,6 +10,13 @@ led.on()
 lastDirection = 'stop'
 
 BOT_NUM = 3
+
+global searchProtocol
+searchProtocol = False
+global timeLastMoved
+timeLastMoved = ticks_ms()
+global couer
+couer = True
 
 if BOT_NUM == 1:
     midresv = ADC(27)
@@ -133,6 +140,8 @@ def irreader(irreceiver):
 
 def smoothMove(direction, speed):
     global lastDirection
+    global timeLastMoved
+    global couer
     
     if direction == lastDirection:
         movement(direction, speed)
@@ -140,36 +149,59 @@ def smoothMove(direction, speed):
         movement('stop', speed)
     elif lastDirection == 'right' and direction == "up" or direction == "down" or direction == "stop":
         movement('stop', speed)
-
+    
+    couer = False
+    timeLastMoved = ticks_ms()
     lastDirection = direction
 
 while True:
+    global timeLastMoved
+    global searchProtocol
+    global couer
+    
     irstrengthMid = irreader(midresv)
     irstrengthLeft = irreader(leftresv)
     irstrengthRight = irreader(rightresv)
     
-    print(irstrengthLeft, irstrengthMid, irstrengthRight)
+    #print(irstrengthLeft, irstrengthMid, irstrengthRight)
     
-    led_r.off();
-    led_m.off();
-    led_l.off();
+    led_r.off()
+    led_m.off()
+    led_l.off()
+    
+    currentTime = ticks_ms()
+    
+    print("currentTime: ", currentTime)
+    print("timeLastMoved: ", timeLastMoved)
+    if couer == False:
+        if ticks_diff(currentTime, timeLastMoved) >= 3000:
+            searchProtocol = True
+            print("Ahhhhhhhhhh")
     
     if irstrengthLeft >= irstrengthMid and irstrengthLeft >= 2000: #Left
+        searchProtocol = False
         smoothMove('left', 0.5)
         led_l.on()
     elif irstrengthRight >= irstrengthMid and irstrengthRight >= 2000: #Right
+        searchProtocol = False
         smoothMove('right', 0.5)
         led_r.on()
     elif irstrengthMid > 22000 and not irstrengthRight >= irstrengthMid and not irstrengthLeft >= irstrengthMid: #Backup
+        searchProtocol = False
         smoothMove("down", 0.75)
         led_r.on()
         led_l.on()
     elif irstrengthMid > 1000 and irstrengthMid < 5000: #Forward
+        searchProtocol = False
         smoothMove("up", 0.9)
         led_m.on()
     else:
-        smoothMove("stop", 0)
-        led_r.on();
-        led_m.on();
-        led_l.on();
-    sleep(0.1)
+        if searchProtocol == True:
+            movement('left', 0.5)
+        else:
+            movement("stop", 0)
+            led_r.on()
+            led_m.on()
+            led_l.on()
+            
+    sleep(0.025)
