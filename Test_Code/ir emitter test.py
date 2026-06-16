@@ -3,6 +3,7 @@ from time import sleep
 from math import ceil
 
 whatcode = "new"
+irOn = Pin(13,  Pin.OUT)
 
 if whatcode == "old":
     #OG code
@@ -32,9 +33,11 @@ if whatcode == "new":
         global value
         if pin.value() == 1:
             print('On')
+            irOn.on()
             value = 1
         else:
             print('Off')
+            irOn.off()
             value = 0
     
     pin12.irq(trigger=Pin.IRQ_RISING | Pin.IRQ_FALLING, handler=pulse_on)
