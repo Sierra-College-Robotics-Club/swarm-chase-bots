@@ -9,6 +9,14 @@ led.on()
 
 lastDirection = 'stop'
 
+thresholdLow = 1400
+thresholdMid = 5000
+thresholdLeft = 2150
+thresholdRight = 2150
+thresholdBackup = 22000
+
+global Spinny_is_on
+Spinny_is_on = True
 BOT_NUM = 3
 
 global searchProtocol
@@ -17,6 +25,8 @@ global timeLastMoved
 timeLastMoved = ticks_ms()
 global cower
 cower = True
+
+switch1 = Pin(10, Pin.IN, Pin.PULL_UP)
 
 if BOT_NUM == 1:
     midresv = ADC(27)
@@ -158,12 +168,13 @@ while True:
     global timeLastMoved
     global searchProtocol
     global cower
+    global Spinny_is_on
     
     irstrengthMid = irreader(midresv)
     irstrengthLeft = irreader(leftresv)
     irstrengthRight = irreader(rightresv)
     
-    #print(irstrengthLeft, irstrengthMid, irstrengthRight)
+    print(irstrengthLeft, irstrengthMid, irstrengthRight)
     
     led_r.off()
     led_m.off()
@@ -171,37 +182,39 @@ while True:
     
     currentTime = ticks_ms()
     
-    print("currentTime: ", currentTime)
-    print("timeLastMoved: ", timeLastMoved)
+    #print("currentTime: ", currentTime)
+    #print("timeLastMoved: ", timeLastMoved)
     if cower == False:
-        if ticks_diff(currentTime, timeLastMoved) >= 3000:
-            searchProtocol = True
-            print("Ahhhhhhhhhh")
+        if Spinny_is_on == True:
+            if ticks_diff(currentTime, timeLastMoved) >= 3000:
+                searchProtocol = True
+                print("Ahhhhhhhhhh")
     
-    if irstrengthLeft >= irstrengthMid and irstrengthLeft >= 2000: #Left
+    if irstrengthLeft >= irstrengthMid and irstrengthLeft >= thresholdLeft: #Left
         searchProtocol = False
         smoothMove('left', 0.5)
         led_l.on()
-    elif irstrengthRight >= irstrengthMid and irstrengthRight >= 2000: #Right
+    elif irstrengthRight >= irstrengthMid and irstrengthRight >= thresholdRight: #Right
         searchProtocol = False
         smoothMove('right', 0.5)
         led_r.on()
-    elif irstrengthMid > 22000: #Backup
+    elif irstrengthMid > thresholdBackup: #Backup
         searchProtocol = False
         smoothMove("down", 0.75)
         led_r.on()
         led_l.on()
-    elif irstrengthMid > 1000 and irstrengthMid < 5000: #Forward
+    elif irstrengthMid > thresholdLow and irstrengthMid < thresholdMid: #Forward
         searchProtocol = False
         smoothMove("up", 0.9)
         led_m.on()
-    elif irstrengthMid >= 5000: #and <22000 #Powered stop/TOO CLOSE (stop)
+    elif irstrengthMid >= thresholdMid: #and < thresholdBackup #Powered stop/TOO CLOSE (stop)
         searchProtocol = False
         movement("stop", 0)
         led_r.on()
         led_m.on()
         led_l.on()
-    else:
+
+    else: # NO LIGHT DETECTED (light < thresholdLow)
         if searchProtocol == True:
             movement('left', 0.5)
         else:
@@ -210,4 +223,11 @@ while True:
             led_m.on()
             led_l.on()
             
+    if switch1.value() == 0:
+        print("yelling")
+        while switch1.value() == 0:
+            pass
+        Spinny_is_on = not Spinny_is_on
+        
+    print(Spinny_is_on)
     sleep(0.025)

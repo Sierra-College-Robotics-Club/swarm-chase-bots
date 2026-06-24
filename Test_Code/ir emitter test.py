@@ -4,6 +4,7 @@ from math import ceil
 
 whatcode = "new"
 irOn = Pin(13,  Pin.OUT)
+irOn.off()
 
 if whatcode == "old":
     #OG code
@@ -22,7 +23,7 @@ if whatcode == "new":
     led = Pin(25,  Pin.OUT)
     led.on()
 
-    pin12 = Pin(12, Pin.IN)
+    pin12 = Pin(19, Pin.IN)
     pin16 = Pin(20,  Pin.OUT)
 
     pwm16 = PWM(pin16)
