@@ -5118,6 +5118,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO for Rev2: \nSwitch to 0.1 inch spacing\nAdd breakout to VBUS here too"
+		(exclude_from_sim no)
+		(at 260.35 84.836 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d53423d9-0ad3-4912-9c79-86d46a35d6aa")
+	)
 	(junction
 		(at 218.44 33.02)
 		(diameter 0)
