@@ -8,6 +8,7 @@ led = Pin(25,  Pin.OUT)
 led.on()
 
 lastDirection = 'stop'
+lastTurnDirection = 'left'
 
 thresholdLow = 1400
 thresholdMid = 5000
@@ -192,10 +193,12 @@ while True:
     
     if irstrengthLeft >= irstrengthMid and irstrengthLeft >= thresholdLeft: #Left
         searchProtocol = False
+        lastTurnDirection = 'left'
         smoothMove('left', 0.5)
         led_l.on()
     elif irstrengthRight >= irstrengthMid and irstrengthRight >= thresholdRight: #Right
         searchProtocol = False
+        lastTurnDirection = 'right'
         smoothMove('right', 0.5)
         led_r.on()
     elif irstrengthMid > thresholdBackup: #Backup
@@ -216,7 +219,12 @@ while True:
 
     else: # NO LIGHT DETECTED (light < thresholdLow)
         if searchProtocol == True:
-            movement('left', 0.5)
+            if lastTurnDirection == 'left':
+                movement('left', 0.5)
+                print('spinny left')
+            if lastTurnDirection == 'right':
+                movement('right', 0.5)
+                print('spinny right')
         else:
             movement("blindStop", 0)
             led_r.on()
@@ -229,5 +237,5 @@ while True:
             pass
         Spinny_is_on = not Spinny_is_on
         
-    print(Spinny_is_on)
+    #print(Spinny_is_on)
     sleep(0.025)
