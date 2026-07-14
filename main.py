@@ -10,11 +10,13 @@ led.on()
 lastDirection = 'stop'
 lastTurnDirection = 'left'
 
+sense_Multipler = 1 # 1 is good, for short range use 2-ish
+
 thresholdLow = 1400
-thresholdMid = 5000
-thresholdLeft = 2150
-thresholdRight = 2150
-thresholdBackup = 22000
+thresholdMid = 5000 * sense_Multipler
+thresholdLeft = 2150 * sense_Multipler
+thresholdRight = 2150 * sense_Multipler
+thresholdBackup = 22000 * sense_Multipler
 
 global Spinny_is_on
 Spinny_is_on = True
@@ -185,6 +187,7 @@ while True:
     
     #print("currentTime: ", currentTime)
     #print("timeLastMoved: ", timeLastMoved)
+    print(lastTurnDirection)
     if cower == False:
         if Spinny_is_on == True:
             if ticks_diff(currentTime, timeLastMoved) >= 3000:
