@@ -10,13 +10,17 @@ led.on()
 lastDirection = 'stop'
 lastTurnDirection = 'left'
 
-sense_Multipler = 1 # 1 is good, for short range use 2-ish
+#Some Reseaver diodes have differnt senseitiveity level compared to others
+sense_Multipler_Stop = 1
+sense_Multipler_Mid = 1 # 1 is good, for short range use 2-ish
+sense_Multipler_Turn = 1 # 1 is good, for short range use 2-ish
+sense_Multipler_Max = 1 # 1 is good, for short range use 2-ish
 
-thresholdLow = 1400
-thresholdMid = 5000 * sense_Multipler
-thresholdLeft = 2150 * sense_Multipler
-thresholdRight = 2150 * sense_Multipler
-thresholdBackup = 22000 * sense_Multipler
+thresholdLow = 1400 * sense_Multipler_Stop
+thresholdMid = 5000 * sense_Multipler_Mid
+thresholdLeft = 2150 * sense_Multipler_Turn
+thresholdRight = 2150 * sense_Multipler_Turn
+thresholdBackup = 22000 * sense_Multipler_Max
 
 global Spinny_is_on
 Spinny_is_on = True
@@ -219,6 +223,7 @@ while True:
         led_r.on()
         led_m.on()
         led_l.on()
+        print("Light stop trigger")
 
     else: # NO LIGHT DETECTED (light < thresholdLow)
         if searchProtocol == True:

@@ -2,11 +2,11 @@ from machine import Pin,PWM,ADC
 from time import sleep
 from math import ceil
 
-whatcode = "new"
+whatcode = 1
 irOn = Pin(13,  Pin.OUT)
 irOn.off()
 
-if whatcode == "old":
+if whatcode == 0: #old
     #OG code
     led = Pin(25,  Pin.OUT)
     led.on()
@@ -19,15 +19,19 @@ if whatcode == "old":
     pwm16.freq(1000)
     pwm16.duty_u16(duty)
 
-if whatcode == "new":
+if whatcode == 1: #new
     led = Pin(25,  Pin.OUT)
     led.on()
 
     pin12 = Pin(19, Pin.IN)
-    pin16 = Pin(20,  Pin.OUT)
-
+    pin16 = Pin(20,  Pin.OUT, value=0)
+    #pin16.off()
+    
     pwm16 = PWM(pin16)
     duty = ceil(0.5 * 65535)
+    pwm16.duty_u16(0)
+    #pwm16.deinit()
+    #pin16.off()
     value = 0
 
     def pulse_on(pin):
@@ -48,9 +52,9 @@ if whatcode == "new":
             pwm16 = PWM(pin16)
             pwm16.freq(1000)
             pwm16.duty_u16(duty)
-            #print('1')
+            print('1')
             sleep(0.1)
         elif value == 0:
-            pwm16.deinit()
-            #print('0')
+            pwm16.duty_u16(0)
+            print('0')
             sleep(0.1)
